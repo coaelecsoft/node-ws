@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="""width=device.width, initial-scale=1.0">
+				<title>Node.js</title>
+				<meta name="description" content="My first node.js website with Express.js">
+					<link rel="stylesheet" href="css/style.css"
+	</head>
+	<body class="main-layout">
+		<nav id="anav" class="nav-animated">
+			<a title="Glavni meni" href="javascript:void(openMyMenu('anav'))">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+			</a>
+			<ul>
+				
+				<li>
+					<a href="#">Home</a>
+				</li>
+
+
+
+			</ul>
+		</nav>
+
+		<!-- My animated panel for the social networks-->
+		<nav id="social-buttons" class="social-buttons ">
+			<ul>
+				<li>
+					<a title="My GitHub website" target="_blank" href="https://coaelecsoft.github.io/">
+						<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+							<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a title="My LinkedIn profil" target="_blank" href="https://www.linkedin.com/in/aleksandar-gavric/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" class="global-nav__logo">
+							<title>LinkedIn</title>
+
+							<g>
+								<path  d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a title="PiSi fb Pge" target="_blank"  href="https://www.facebook.com/PiSi.Web.Development">
+						<svg viewBox="0 0 36 36" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4" fill="url(#jsc_s_j)" height="40" width="40">
+							<defs>
+								<linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_j">
+									<stop offset="0%" stop-color="#0062E0"></stop>
+									<stop offset="100%" stop-color="#19AFFF"></stop>
+								</linearGradient>
+							</defs>
+							<path class="p361ku9c" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a title="coaElecSoft twitter" target="_blank" href="#">
+						<svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" class="r-1kihuf0 r-1cvl2hr r-4qtqp9 r-yyyyoo r-h3s6tt r-yhre11 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+							<g>
+								<path fill="rgb(29, 155, 240)" d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path>
+							</g>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<main >
+			<header class="layout-header anim-start-header" id="layout-100vh">
+				<figure>
+					<img id="move-me" src="/frontend/web/uploads/base/sm_back_dizajn-sajta--seo-optimizacija--izrada-web-aplikacija.jpg" alt="Dizajn, programiranje i SEO web sajtova i aplikacija" title="Background of home page" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">              
+        </figure>
+				<div >
+					<h1 itemprop="name">Dizajn web sajtova i aplikacija, web programiranje, SEO optimizacija, performanse... </h1>
+					<p itemprop="description">Unikatan dizajn web sajtova i aplikacija. Optimizacija web sajta za pretraživače SEO. Front end Back end web razvoj i programiranje prema W3C standardima. </p>
+				</div>
+			</header>
+		</main>
+		<ul class="home-articles">
+
+			<li>
+				<header>
+
+					<p>Najbolji način da predstavite sebe ili delatnost kojom se bavite je web. Pozovite nas i dobit ćete kompletnu uslugu koja Vam je neophodna da bi ste se pojavili u digitalnom svetu.</p>
+					<p>
+						Brzina, upotrebljivost, pravilno kodiranje, SEO optimizacija, moderan dizajn prilagođen svim vrstama uređaja (<em>responsive dizajn</em>), mobile-first dizajn, sigurnost, pouzdanost, povoljna cena, najkraći mogući rokovu su karakteristike koje najbolje opisuju naše usluge.
+					</p>
+
+				</header>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/usluge-web-razvoja-17-" title="Usluge web razvoja">Usluge web razvoja</a>
+					</h2>
+
+
+					<p>
+						U ponudi su sledeće usluge web razvoja: <strong>izrada sajta</strong>, web aplikacije, PWA <a title="(Progressive Web App" href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener">
+							(<em>Progressive Web App</em>),
+						</a> grafički <strong>dizajn sajta</strong> ili aplikacije, izrada baze podataka ili neka druga usluga web razvoja.
+					</p>
+					<p>Usluge koje poručite ovde biće rađene primenom naprednih front end i back end tehnologija.</p>
+
+				</header>
+
+				<figure>
+					<img class="" src="/frontend/web/uploads/home/sm_usluge-web-razvoja.png" alt="Usluge web razvoja" width="300" height="236">                              
+                    </figure>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/web-dizajn-usluge-21-" title="Web dizajn usluge">Web dizajn usluge</a>
+					</h2>
+
+
+					<p>Planiranje, osmišljanje i izrada web sajtova unikatnog i modernog dizajna.</p>
+					<p>
+						<strong>Responsive dizajn</strong>, prilagođen svim vrstama uređaja.
+					</p>
+					<p>
+						<strong>Izrada web sajtova</strong>, redizajn i održavanje&nbsp; i aplikacija.
+					</p>
+					<p>
+						<strong>SEO optimizacija</strong> web sajta za pretraživače (SEO friendly).
+					</p>
+					<p>Dizajn privalačan korisniku i jednostavan za upotrebu (User friendly).</p>
+
+				</header>
+
+				<figure>
+					<img class="" src="/frontend/web/uploads/home/sm_web-dizajn-usluge.png" alt="Web dizajn usluge" width="300" height="105">                              
+                    </figure>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/izrada-web-sajta-23-" title="Izrada web sajta">Izrada web sajta</a>
+					</h2>
+
+
+					<p>Bilo da ste poznata ličnost, pokrenuli ste sopstveni biznis ili ste pak kolekcionar i treba Vam web sajt?</p>
+					<p>
+						Na pravom ste mestu! <a href="../../kontakt" target="_blank" rel="noopener">Kontaktirate nas</a> i odmah dogovorite izradu web sajta.
+					</p>
+					<p>Ovde možete poručiti izradu web sajtova različitih namena: web prezentacije, informativni sajtovi, sajtovi za razmenu dokumenata i multimedijalnih sadržaja, web galerije, GIS (Geografski informacioni sistemi), portali, komercijalini sajtovi za online prodaju - web shop-ovi, kolekcionarski sajtovi, društvene mreže i drugo.</p>
+					<p>Karakteristike web sajt koji ovde poručite biće visokih performansi, optimizovan za sve vrste uređaja kao i za pretraživače.</p>
+
+				</header>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/seo-optimizacija-2-" title="SEO optimizacija">SEO optimizacija</a>
+					</h2>
+
+
+					<p>Izrada sajta, dizajn i programiranje, podrazumeva i on-page SEO optimizaciju za pretraživače. &nbsp;</p>
+					<p>Vaš budući sajt ovde poručen biće dopadljiv korisniku i lako pronađen od strane pretraživača i dodat u SERP.&nbsp;</p>
+
+				</header>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/dizajn-sajta-3-" title="Dizajn sajta">Dizajn sajta</a>
+					</h2>
+
+
+					<p>Po današnjim standardima algoritmi 'web pretraživači' preporučuju, a od 2021 godine, i zahtevaju&nbsp; dizajn prilagođem svim vrstama uređaja. Responsive dizajn - grafički optimizovan za rezoluciju ekrana različitih uređaja. U današnjem modernom dobu veći deo korisnika pokreće aplikacije na mobilnim uređajima.</p>
+
+				</header>
+
+				<figure>
+					<img class="" src="/frontend/web/uploads/home/sm_dizajn-sajta.jpg" alt="Dizajn sajta" width="300" height="165">                              
+                    </figure>
+			</li>
+
+			<li>
+				<header>
+					<h2>
+						<a class="btn-h2" href="/programiranje-sajta--4-" title="Programiranje sajta ">Programiranje sajta </a>
+					</h2>
+
+
+					<p>Programiranje je skup veština i sposobnosti potrebnih da se reši neki problem u digitalnoj formi. Poznavanje programskih jezika, sintaksa i filozofija funkcionisanja, pisanje koda u programskom jeziku su neki od zahteva koji se traže od programera. Ovo je važan deo programerskih sposobnosti ali nije jedini. Glavni posao programera jeste osmišljanje rešenja i primena određenog programskog jezika. To je u stvari glavni posao programera.</p>
+
+				</header>
+			</li>
+		</ul>
+		<nav id="go-to-top" class="go-to-top">
+			<svg onclick="goToTop()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+				<path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+			</svg>
+		</nav>
+		<script src="js/index.js"></script>
+	</body>
+</html>
