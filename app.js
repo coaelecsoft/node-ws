@@ -30,4 +30,7 @@ app.get('/:page', (req, res) => {
     }
 })
 
-app.listen(process.env.PORT || 8008)
+const port = process.env.PORT || '8080'
+
+app.listen(port, ()=>console.log(`Server start on port: ${port}`))
+
