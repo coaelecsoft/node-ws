@@ -30,5 +30,4 @@ app.get('/:page', (req, res) => {
     }
 })
 
-
-app.listen(8008)
+app.listen(process.env.PORT || 8008)
